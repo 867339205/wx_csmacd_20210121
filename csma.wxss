@@ -1,0 +1,144 @@
+/* pages/csma/csma.wxss */
+.top{
+  margin:20rpx 120rpx;
+}
+.clear{
+  clear:both;
+}
+.star_i,.time{
+  border:1rpx solid #3aa6ff;
+  float:left;
+  min-width:60rpx;
+  color:#fff;
+  background: #3aa6ff;
+  padding:10rpx 20rpx;
+  text-align: center;
+  font-size: 34rpx;
+}
+.time_i{
+  float:left;
+  margin-left:10rpx;
+  font-size: 34rpx;
+  color:#000;
+ line-height: 70rpx;
+}
+.stop{
+   border:1rpx solid #3aa6ff;
+  float:right;
+  color:#fff;
+  background: #3aa6ff;
+  padding:10rpx 20rpx;
+  text-align: center;
+  font-size: 34rpx;
+}
+.num{
+  color:#3aa6ff;
+}
+.cp_a{
+  margin-top:-10rpx;
+}
+.name{
+  border:#000 1rpx solid;
+  color:#000;
+  font-size: 34rpx;
+  float:left;
+  padding:20rpx;
+  margin:10rpx 310rpx;
+  margin-right:10rpx;
+}
+.line_y{
+  width:60rpx;
+  border:#888 solid 1rpx;
+  height:800rpx;
+  margin:50rpx auto;
+  
+  position: relative;
+}
+.line_x{
+position: absolute;
+height:5rpx;
+ border:#888 solid 1rpx;
+ width:700rpx;
+ margin:0 auto;
+ top:395rpx;
+ left:-320rpx;
+ text-align: right;
+  font-size:32rpx;
+}
+.conten_a{
+  float:left;
+  width:330rpx;
+  margin-left:70rpx;
+  font-size:32rpx;
+  
+}
+.conten_b{
+  float:left;
+  width:330rpx;
+  margin-left:-40rpx;
+  margin-top:-250rpx;
+   font-size:32rpx;
+  
+}
+.detail{
+
+}
+.a_all{
+  position: absolute;
+  width:300rpx;
+  top:250rpx;
+  left:10rpx;
+  height:300rpx;
+  overflow: auto;
+  border:1rpx solid #555;
+   padding:10rpx;
+}
+.b_all{
+    position: absolute;
+  width:300rpx;
+  top:720rpx;
+  left:10rpx;
+  height:300rpx;
+  overflow: auto;
+  border:1rpx solid #555;
+  padding:10rpx;
+}
+.all_i{
+  width:300rpx;
+  font-size: 28rpx;
+  color:#333;
+  margin:0rpx;
+  
+}
+.all_1{
+  color:#3aa6ff;
+  font-size: 29rpx;
+}
+.data_a{
+  position: absolute;
+  width:50rpx;
+  height:50rpx;
+  background: #3aa6ff;
+  border-radius: 50rpx;
+  left:5rpx;
+  top:-50rpx;
+  color:#fff;
+  font-size: 34rpx;
+    text-align: center;
+  line-height: 50rpx;
+}
+.data_b{
+  position: absolute;
+    width:50rpx;
+  height:50rpx;
+  background: #ffd503;
+  border-radius: 50rpx;
+  left:5rpx;
+   color:#fff;
+  font-size: 34rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.data_1{
+  background:#ff6b6b;
+}

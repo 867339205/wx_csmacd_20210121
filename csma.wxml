@@ -1,0 +1,51 @@
+<view class="content">
+  <view class="top">
+    <view class="star">
+      <view class="time" wx:if="{{time_all.star==1}}">{{time_all.time}}</view>
+      <view class="time_i" wx:if="{{time_all.star==1}}">比特时间</view>
+      <view class="star_i" wx:else bindtap="star_tap">开始</view>
+    </view>
+    <view class="stop" bindtap="stop_tap">重置</view>
+  </view>
+<view class="clear"></view>
+  <view class="cp_a">
+    <view class="a_all">
+        <view class="{{'all_i all_'+item.title}}" wx:for="{{detail_a}}" wx:if="{{time_all.star==1}}">{{item.text}}</view>
+    </view>
+    <view class="name">主机A</view>
+    
+  </view>
+  <view class="clear"></view>
+  <view class="line_y">
+  <view class="conten_a">
+      <view class="title" wx:if="{{num[0]<=10}}">正在发送第【<text class="num">{{num[0]}}</text>】个数据帧</view>
+      <view class="detail"  wx:if="{{flag_a.flag==1}}">空闲监听中，【<text class="num">{{flag_a.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_a.flag==2}}">发送中，【<text class="num">{{flag_a.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_a.flag==3}}">发送强化冲突中，【<text class="num">{{flag_a.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_a.flag==4}}">监听强化冲突中，【<text class="num">{{flag_a.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_a.flag==5}}">监听信道繁忙中，【<text class="num">{{flag_a.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_a.flag==6}}">重传等待中，【<text class="num">{{flag_a.time}}</text>】比特时间</view>
+    </view>
+    <view class="{{'data_a data_'+data[0].color}}" style="{{'top:'+data[0].top+'rpx;'}}" wx:if="{{num[0]<=10}}">{{num[0]}}</view>
+    <view class="{{'data_b data_'+data[1].color}}" style="{{'top:'+data[1].top+'rpx;'}}" wx:if="{{num[1]<=10}}">{{num[1]}}</view>
+    <view class="line_x" >共享总线</view>
+  </view>
+  
+
+  <view class="cp_b">
+    <view class="b_all">
+    <view class="{{'all_i all_'+item.title}}"  wx:for="{{detail_b}}" wx:if="{{time_all.star==1}}">{{item.text}}</view>
+    </view>
+    <view class="name">主机B</view>
+    <view class="conten_b">
+      <view class="title" wx:if="{{num[1]<=10}}">正在发送第【<text class="num">{{num[1]}}</text>】个数据帧</view>
+      <view class="detail" wx:if="{{flag_b.flag==1}}">空闲监听中，【<text class="num">{{flag_b.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_b.flag==2}}">发送中，【<text class="num">{{flag_b.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_b.flag==3}}">强化冲突，【<text class="num">{{flag_b.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_b.flag==4}}">监听强化冲突中，【<text class="num">{{flag_b.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_b.flag==5}}">监听信道繁忙中，【<text class="num">{{flag_b.time}}</text>】比特时间</view>
+      <view class="detail" wx:if="{{flag_b.flag==6}}">重传等待中，【<text class="num">{{flag_b.time}}</text>】比特时间</view>
+    </view>
+  </view>
+
+</view>
